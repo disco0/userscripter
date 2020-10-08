@@ -26,6 +26,7 @@
   "files": [
     "bin/*",
     "bootstrap/*",
+    "bootstrap/.gitignore",
     "build/*",
     "lib/*"
   ],

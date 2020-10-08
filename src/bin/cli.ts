@@ -32,7 +32,7 @@ function init(_: yargs.Arguments) {
             console.error("Directory not empty. Stopping.");
             return;
         }
-        fsx.copy(BOOTSTRAP_ROOT, rootDir);
+        fsx.copy(BOOTSTRAP_ROOT, rootDir, { filter: (src, dest) => { console.warn(src, dest); return true; } });
     });
 }
 
